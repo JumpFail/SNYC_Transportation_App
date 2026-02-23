@@ -13,4 +13,12 @@
     <PackageReference Include="MudBlazor" Version="9.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="SNYC.Transport.Api/**/*.cs" />
+  </ItemGroup>
+
 </Project>
+
+<!-- can remove SNYC.Transport.Api if not needed
+otherwise, keep it and remove the Compile Remove above and add a ProjectReference to SNYC.Transport.Api.csproj
+ -->
